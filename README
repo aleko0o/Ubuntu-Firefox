@@ -1,0 +1,31 @@
+Masaüstü Ortamını Kurun
+'sudo apt install xfce4 xfce4-goodies -y'
+
+xrdp’yi Kurun
+'sudo apt install xrdp -y'
+
+xrdp’yi başlatın ve otomatik başlatma için etkinleştirin:
+'sudo systemctl enable xrdp'
+'sudo systemctl start xrdp'
+
+xrdp’yi Xfce ile Yapılandırın
+'echo "xfce4-session" >~/.xsession'
+
+Güvenlik Duvarını Yapılandırın
+RDP için kullanılan 3389 portunu açın:
+'sudo ufw allow 3389/tcp'
+
+RDP Bağlantısında Firefox Tarayıcı Kullanma
+'sudo apt install firefox -y'
+
+RDP İstemcisi ile Bağlanın
+mobaxtrem rdp sessison a girin:
+VPS IP adresiniz
+VPS kullanıcı adınız genelde root ve şifreniz
+şimdi bağlanın:
+
+Firefox'u RDP masaüstünüzde bulmak için aşağıdaki adımları izleyebilirsiniz:
+"Applications" Bu menüye tıklayın.
+İnternet Kategorisini Seçin: Menüde "İnternet" veya "Web Tarayıcıları" kategorisi altında Firefox simgesini göreceksiniz.
+Firefox’u Başlatın: Firefox simgesine tıklayarak tarayıcıyı açabilirsiniz.
+Eğer menüde görünmüyorsa, uçbirim(terminal firefox yazarak enterlayın. tarayıcıyı doğrudan başlatabilirsiniz.
